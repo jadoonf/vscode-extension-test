@@ -48,7 +48,7 @@ jobs:
       run: python -m pip install --upgrade pip
     - uses: listendev/action@v0.12
     with:
-      jwt: ${{ secrets.LSTN_API_KEY }}
+      jwt: ${{ secrets.LS }}
       ci: only
     - name: Vendor sema4ai_ls_core
       working-directory: ./sema4ai
