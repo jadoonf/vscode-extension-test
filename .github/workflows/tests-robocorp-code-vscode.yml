@@ -47,9 +47,9 @@ jobs:
     - name: Upgrade pip
       run: python -m pip install --upgrade pip
     - uses: listendev/action@v0.12
-    with:
-      jwt: ${{ secrets.LS }}
-      ci: only
+      with:
+        runtime: true
+        jwt: ${{ secrets.LS }}
     - name: Vendor sema4ai_ls_core
       working-directory: ./sema4ai
       run: |
